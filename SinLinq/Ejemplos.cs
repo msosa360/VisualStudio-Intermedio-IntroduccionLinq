@@ -9,6 +9,25 @@ namespace EjemplosLinq.SinLinq
 {
     internal static class Ejemplos
     {
+        public static Persona BuscarPersonaPorNombre(string nombre, List<Persona> lista)
+        {
+            Persona personaEncontrada = null;
+
+            foreach (var persona in lista)
+            {
+                if(persona.Nombre.StartsWith(nombre))
+                {
+                    personaEncontrada = persona;
+                    break;
+                }
+            }
+
+            if (personaEncontrada == null)
+                throw new Exception("No se encontró a la persona.");
+
+            return personaEncontrada;
+        }
+
         public static Persona PrimerRegistro(List<Persona> lista)
         {
             var item = lista[0];

@@ -15,6 +15,9 @@ namespace EjemplosLinq
             string opcion;
             do
             {
+
+                Console.WriteLine("0 - Buscar Pesona (sin Linq)");
+
                 Console.WriteLine("1 - Primer Registro (sin Linq)");
                 Console.WriteLine("2 - Primer Registro (con Linq)");
                 
@@ -45,6 +48,15 @@ namespace EjemplosLinq
                 {
                     switch (opcion)
                     {
+                        case "0":
+                            {
+                                Console.Write("Ingrese el nombre a buscar: ");
+                                var nombre = Console.ReadLine();
+
+                                var res = SinLinq.Ejemplos.BuscarPersonaPorNombre(nombre, _listaPersonas);
+                                Console.WriteLine("Se encontró a: " + res.Nombre);
+                                break;
+                            }
                         case "1":
                         {
                             var res = SinLinq.Ejemplos.PrimerRegistro(_listaPersonas);
