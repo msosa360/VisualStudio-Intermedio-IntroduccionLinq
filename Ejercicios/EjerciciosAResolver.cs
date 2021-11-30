@@ -2,9 +2,9 @@
 {
     internal static class EjerciciosAResolver
     {
-        // 1. Determinar cuántas empleados hay de sexo femenino
-        // 2. Determinar cuántas empleados hay de sexo masculino mayores de 40 años
-        // 3. Listar todos los empleador ordenados por su fecha de ingreso a la empresa
+        // 1. Determinar cuántos empleados hay de sexo femenino
+        // 2. Determinar cuánt0s empleados hay de sexo masculino mayores de 40 años
+        // 3. Listar todos los empleadores ordenados por su fecha de ingreso a la empresa
         // 4. Determinar el promedio de salarios de los empleados
         // 5. Determinar el promedio de salarios de los empleados según su sexo
         // 6. Determinar la edad del menor de los empleados
